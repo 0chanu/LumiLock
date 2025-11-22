@@ -1,0 +1,27 @@
+{
+  "name": "lumilock-bot",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "lint": "eslint .",
+    "test": "echo \"No tests configured\" && exit 0",
+    "deploy": "npm run build"
+  },
+  "dependencies": {
+    "@types/form-data": "^2.2.1",
+    "axios": "^1.7.0",
+    "discord.js": "^14.16.0",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.5",
+    "p-queue": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.0"
+  }
+}
